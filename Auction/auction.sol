@@ -81,7 +81,7 @@ contract Auction{
         uint currentBid = bids[msg.sender] + msg.value;
         
         // the currentBid should be greater than the highestBindingBid. 
-        // Otherwise there's nothing to do.
+        // Otherwise there's nothing to do..
         require(currentBid > highestBindingBid);
         
         // updating the mapping variable
